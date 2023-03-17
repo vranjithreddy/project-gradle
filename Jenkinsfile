@@ -26,7 +26,8 @@ pipeline {
         stage('npm-install') {
                 steps {  
                 //  withDockerContainer('node:latest') {
-                     sh "gradle build"
+                   withGradle {
+                     }  sh "gradle build"
                 //   }
                 }
            }
