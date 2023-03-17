@@ -27,7 +27,7 @@ pipeline {
                 steps {  
                 //  withDockerContainer('node:latest') {}
                    withGradle {
-                       sh "gradle build"
+                       bat "gradle build"
                        }
                 }
            }
